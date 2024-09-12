@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Header Title Styling */
+header h1 {
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Section Styling */
+.hero-background {
+  background-image: url('/src/assets/background.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.benjamin-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-border {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  /* Adjust font size as needed */
+}
+
+.text-border::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: transparent;
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0.6;
+  filter: blur(1px);
+  /* Adjust blur as needed */
+  /* You can add more styling here */
+  font-size: inherit;
+  /* Make sure the border text has the same size */
+}
