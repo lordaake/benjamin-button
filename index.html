@@ -14,52 +14,44 @@
 <body>
   <!-- Header -->
   <header
-    class="bg-gradient-to-r from-pink-400 via-pink-400 to-pink-400 py-8 text-center text-white font-extrabold shadow-lg rounded-b-lg">
+    class="bg-gradient-to-r from-pink-400 via-pink-400 to-pink-400 py-8 text-center text-white font-extrabold shadow-lg rounded-b-lg relative">
     <h1 class="text-3xl md:text-5xl lg:text-6xl mb-5 text-black font-bold text-border" data-text="$BENJAMIN">Benjamin
-      Button
-    </h1>
-
-    <span class="absolute w-full h-1 bg-purple-200 bottom-0 left-0"></span>
-    </h1>
+      Button</h1>
+    <!-- Ensure this span is not causing issues -->
+    <span class="absolute inset-x-0 bottom-0 h-1 bg-purple-200"></span>
   </header>
 
   <!-- Hero Section -->
-  <section class="flex flex-col items-center justify-center min-h-screen relative text-center p-5 mt-[-2rem]">
+  <section class="flex flex-col items-center justify-center min-h-screen relative text-center p-5">
     <img src="/src/assets/taylor.jpg" alt="Taylor Swift"
       class="w-60 md:w-80 lg:w-96 h-auto rounded-lg shadow-lg mb-5" />
-    <h1 class="text-2xl md:text-4xl lg:text-5xl mb-5 text-black font-bold text-border" data-text="$BENJAMIN">
-      $BENJAMIN
+    <h1 class="text-2xl md:text-4xl lg:text-5xl mb-5 text-black font-bold text-border" data-text="$BENJAMIN">$BENJAMIN
     </h1>
 
     <!-- DexScreener Link -->
     <div class="mt-5">
       <a href="https://dexscreener.com/tron/twafh8blwdyxbep8hsetncywvsvaq4t4ai" target="_blank"
-        class="text-blue-600 hover:text-blue-800 hover:underline text-lg font-semibold transition-colors duration-300">
-        View on DexScreener
-      </a>
+        class="text-blue-600 hover:text-blue-800 hover:underline text-lg font-semibold transition-colors duration-300">View
+        on DexScreener</a>
     </div>
 
     <!-- Social Media Links in Column -->
     <div class="mt-5 flex flex-col gap-4">
       <a href="https://x.com/BenjaminCatTron" target="_blank"
-        class="text-blue-500 hover:text-blue-700 hover:underline text-lg font-semibold transition-colors duration-300">
-        Twitter: @BenjaminCatTron
-      </a>
+        class="text-blue-500 hover:text-blue-700 hover:underline text-lg font-semibold transition-colors duration-300">Twitter:
+        @BenjaminCatTron</a>
       <a href="https://t.me/benjamin_portal" target="_blank"
-        class="text-blue-400 hover:text-blue-600 hover:underline text-lg font-semibold transition-colors duration-300">
-        Telegram
-      </a>
+        class="text-blue-400 hover:text-blue-600 hover:underline text-lg font-semibold transition-colors duration-300">Telegram</a>
     </div>
 
     <!-- Tron Address Section -->
     <section class="bg-white p-6 rounded-lg shadow-lg mx-auto max-w-md lg:max-w-2xl text-center my-10">
       <h2 class="text-xl md:text-2xl mb-4 font-bold">Benjamin's Tron Address</h2>
-      <p class="bg-gray-100 p-4 rounded-lg text-green-500 overflow-wrap break-word">
-        TF6K9Fc63yvEFdaEHNSLsywXT8P1WSj6Jk</p>
+      <p class="bg-gray-100 p-4 rounded-lg text-green-500 overflow-wrap break-word">TF6K9Fc63yvEFdaEHNSLsywXT8P1WSj6Jk
+      </p>
       <button
-        class="bg-green-500 text-white py-2 px-6 rounded-lg font-bold cursor-pointer mt-4 hover:bg-green-600 transition-colors">
-        Copy Address
-      </button>
+        class="bg-green-500 text-white py-2 px-6 rounded-lg font-bold cursor-pointer mt-4 hover:bg-green-600 transition-colors">Copy
+        Address</button>
     </section>
   </section>
 </body>
